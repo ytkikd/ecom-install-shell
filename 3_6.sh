@@ -1,3 +1,5 @@
+#!/bin/bash
+
 tar zxvf OpenLayers-2.13.1.tar.gz
 mv OpenLayers-2.13.1 webapps/map/OpenLayers
 #

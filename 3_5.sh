@@ -1,3 +1,4 @@
+#!/bin/bash
 rm -f geoserver/data_dir/layergroups/*
 rm -rf geoserver/data_dir/workspaces/cite
 rm -rf geoserver/data_dir/workspaces/it.geosolutions
