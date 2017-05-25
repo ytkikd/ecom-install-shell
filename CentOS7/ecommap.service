@@ -1,0 +1,10 @@
+[Unit]
+Description = ecommap
+
+[Service]
+ExecStart = /etc/init.d/ecommap
+Restart = always
+Type = simple
+
+[Install]
+WantedBy = multi-user.target
