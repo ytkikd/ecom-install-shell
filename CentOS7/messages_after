@@ -1,0 +1,831 @@
+May 26 13:43:35 ik1-307-13626 rsyslogd: [origin software="rsyslogd" swVersion="7.4.7" x-pid="808" x-info="http://www.rsyslog.com"] start
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys cpuset
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys cpu
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys cpuacct
+May 26 13:43:26 ik1-307-13626 kernel: Linux version 3.10.0-514.16.1.el7.x86_64 (builder@kbuilder.dev.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-11) (GCC) ) #1 SMP Wed Apr 12 15:04:24 UTC 2017
+May 26 13:43:26 ik1-307-13626 kernel: Command line: BOOT_IMAGE=/vmlinuz-3.10.0-514.16.1.el7.x86_64 root=UUID=c9321269-7178-43b4-b696-4de4e92a4518 ro vconsole.font=latarcyrheb-sun16 consoleblank=0 nomodeset elevator=noop net.ifnames=0 biosdevname=0 console=tty1 console=ttyS0,115200n8r LANG=C
+May 26 13:43:26 ik1-307-13626 kernel: e820: BIOS-provided physical RAM map:
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x0000000000100000-0x000000001fffdfff] usable
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x000000001fffe000-0x000000001fffffff] reserved
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x00000000feffc000-0x00000000feffffff] reserved
+May 26 13:43:26 ik1-307-13626 kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+May 26 13:43:26 ik1-307-13626 kernel: NX (Execute Disable) protection: active
+May 26 13:43:26 ik1-307-13626 kernel: SMBIOS 2.4 present.
+May 26 13:43:26 ik1-307-13626 kernel: Hypervisor detected: KVM
+May 26 13:43:26 ik1-307-13626 kernel: e820: last_pfn = 0x1fffe max_arch_pfn = 0x400000000
+May 26 13:43:26 ik1-307-13626 kernel: x86 PAT enabled: cpu 0, old 0x7040600070406, new 0x7010600070106
+May 26 13:43:26 ik1-307-13626 kernel: found SMP MP-table at [mem 0x000f0af0-0x000f0aff] mapped at [ffff8800000f0af0]
+May 26 13:43:26 ik1-307-13626 kernel: Using GB pages for direct mapping
+May 26 13:43:26 ik1-307-13626 kernel: RAMDISK: [mem 0x1e711000-0x1f8d8fff]
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: RSDP 00000000000f0960 00014 (v00 BOCHS )
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: RSDT 000000001ffffbc1 00034 (v01 BOCHS  BXPCRSDT 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: FACP 000000001ffff1c0 00074 (v01 BOCHS  BXPCFACP 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: DSDT 000000001fffe040 01180 (v01 BOCHS  BXPCDSDT 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: FACS 000000001fffe000 00040
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: SSDT 000000001ffff234 008DD (v01 BOCHS  BXPCSSDT 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: APIC 000000001ffffb11 00078 (v01 BOCHS  BXPCAPIC 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: HPET 000000001ffffb89 00038 (v01 BOCHS  BXPCHPET 00000001 BXPC 00000001)
+May 26 13:43:26 ik1-307-13626 kernel: No NUMA configuration found
+May 26 13:43:26 ik1-307-13626 kernel: Faking a node at [mem 0x0000000000000000-0x000000001fffdfff]
+May 26 13:43:26 ik1-307-13626 kernel: Initmem setup node 0 [mem 0x00000000-0x1fffdfff]
+May 26 13:43:26 ik1-307-13626 kernel:  NODE_DATA [mem 0x1ffd7000-0x1fffdfff]
+May 26 13:43:26 ik1-307-13626 kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+May 26 13:43:26 ik1-307-13626 kernel: kvm-clock: cpu 0, msr 0:1ff87001, primary cpu clock
+May 26 13:43:26 ik1-307-13626 kernel: Zone ranges:
+May 26 13:43:26 ik1-307-13626 kernel:  DMA      [mem 0x00001000-0x00ffffff]
+May 26 13:43:26 ik1-307-13626 kernel:  DMA32    [mem 0x01000000-0xffffffff]
+May 26 13:43:26 ik1-307-13626 kernel:  Normal   empty
+May 26 13:43:26 ik1-307-13626 kernel: Movable zone start for each node
+May 26 13:43:26 ik1-307-13626 kernel: Early memory node ranges
+May 26 13:43:26 ik1-307-13626 kernel:  node   0: [mem 0x00001000-0x0009efff]
+May 26 13:43:26 ik1-307-13626 kernel:  node   0: [mem 0x00100000-0x1fffdfff]
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PM-Timer IO Port: 0xb008
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: LAPIC (acpi_id[0x00] lapic_id[0x00] enabled)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: LAPIC_NMI (acpi_id[0xff] dfl dfl lint[0x1])
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: IOAPIC (id[0x00] address[0xfec00000] gsi_base[0])
+May 26 13:43:26 ik1-307-13626 kernel: IOAPIC[0]: apic_id 0, version 17, address 0xfec00000, GSI 0-23
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 5 global_irq 5 high level)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 high level)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 10 global_irq 10 high level)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 11 global_irq 11 high level)
+May 26 13:43:26 ik1-307-13626 kernel: Using ACPI (MADT) for SMP configuration information
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: HPET id: 0x8086a201 base: 0xfed00000
+May 26 13:43:26 ik1-307-13626 kernel: smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+May 26 13:43:26 ik1-307-13626 kernel: PM: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+May 26 13:43:26 ik1-307-13626 kernel: PM: Registered nosave memory: [mem 0x000a0000-0x000effff]
+May 26 13:43:26 ik1-307-13626 kernel: PM: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+May 26 13:43:26 ik1-307-13626 kernel: e820: [mem 0x20000000-0xfeffbfff] available for PCI devices
+May 26 13:43:26 ik1-307-13626 kernel: Booting paravirtualized kernel on KVM
+May 26 13:43:26 ik1-307-13626 kernel: setup_percpu: NR_CPUS:5120 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+May 26 13:43:26 ik1-307-13626 kernel: PERCPU: Embedded 33 pages/cpu @ffff88001fc00000 s96728 r8192 d30248 u2097152
+May 26 13:43:26 ik1-307-13626 kernel: KVM setup async PF for cpu 0
+May 26 13:43:26 ik1-307-13626 kernel: kvm-stealtime: cpu 0, msr 1fc0f3c0
+May 26 13:43:26 ik1-307-13626 kernel: Built 1 zonelists in Node order, mobility grouping on.  Total pages: 128903
+May 26 13:43:26 ik1-307-13626 kernel: Policy zone: DMA32
+May 26 13:43:26 ik1-307-13626 kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-3.10.0-514.16.1.el7.x86_64 root=UUID=c9321269-7178-43b4-b696-4de4e92a4518 ro vconsole.font=latarcyrheb-sun16 consoleblank=0 nomodeset elevator=noop net.ifnames=0 biosdevname=0 console=tty1 console=ttyS0,115200n8r LANG=C
+May 26 13:43:26 ik1-307-13626 kernel: PID hash table entries: 2048 (order: 2, 16384 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: x86/fpu: xstate_offset[2]: 0240, xstate_sizes[2]: 0100
+May 26 13:43:26 ik1-307-13626 kernel: xsave: enabled xstate_bv 0x7, cntxt size 0x340 using standard form
+May 26 13:43:26 ik1-307-13626 kernel: Memory: 480536k/524280k available (6767k kernel code, 392k absent, 43352k reserved, 4430k data, 1680k init)
+May 26 13:43:26 ik1-307-13626 kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+May 26 13:43:26 ik1-307-13626 kernel: Hierarchical RCU implementation.
+May 26 13:43:26 ik1-307-13626 kernel: #011RCU restricting CPUs from NR_CPUS=5120 to nr_cpu_ids=1.
+May 26 13:43:26 ik1-307-13626 kernel: NR_IRQS:327936 nr_irqs:256 0
+May 26 13:43:26 ik1-307-13626 kernel: Console: colour VGA+ 80x25
+May 26 13:43:26 ik1-307-13626 kernel: console [tty1] enabled
+May 26 13:43:26 ik1-307-13626 kernel: console [ttyS0] enabled
+May 26 13:43:26 ik1-307-13626 kernel: allocated 2097152 bytes of page_cgroup
+May 26 13:43:26 ik1-307-13626 kernel: please try 'cgroup_disable=memory' option if you don't want memory cgroups
+May 26 13:43:26 ik1-307-13626 kernel: tsc: Detected 2599.998 MHz processor
+May 26 13:43:26 ik1-307-13626 kernel: Calibrating delay loop (skipped) preset value.. 5199.99 BogoMIPS (lpj=2599998)
+May 26 13:43:26 ik1-307-13626 kernel: pid_max: default: 32768 minimum: 301
+May 26 13:43:26 ik1-307-13626 kernel: Security Framework initialized
+May 26 13:43:26 ik1-307-13626 kernel: SELinux:  Initializing.
+May 26 13:43:26 ik1-307-13626 kernel: Dentry cache hash table entries: 65536 (order: 7, 524288 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: Inode-cache hash table entries: 32768 (order: 6, 262144 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: Mount-cache hash table entries: 4096
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys memory
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys devices
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys freezer
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys net_cls
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys blkio
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys perf_event
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys hugetlb
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys pids
+May 26 13:43:26 ik1-307-13626 kernel: Initializing cgroup subsys net_prio
+May 26 13:43:26 ik1-307-13626 kernel: mce: CPU supports 10 MCE banks
+May 26 13:43:26 ik1-307-13626 kernel: Last level iTLB entries: 4KB 512, 2MB 0, 4MB 0
+May 26 13:43:26 ik1-307-13626 kernel: Last level dTLB entries: 4KB 512, 2MB 0, 4MB 0
+May 26 13:43:26 ik1-307-13626 kernel: tlb_flushall_shift: 6
+May 26 13:43:26 ik1-307-13626 kernel: Freeing SMP alternatives: 28k freed
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Core revision 20130517
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: All ACPI Tables successfully acquired
+May 26 13:43:26 ik1-307-13626 kernel: ftrace: allocating 25812 entries in 101 pages
+May 26 13:43:26 ik1-307-13626 kernel: smpboot: APIC(0) Converting physical 0 to logical package 0
+May 26 13:43:26 ik1-307-13626 kernel: smpboot: Max logical packages: 1
+May 26 13:43:26 ik1-307-13626 kernel: Enabling x2apic
+May 26 13:43:26 ik1-307-13626 kernel: Enabled x2apic
+May 26 13:43:26 ik1-307-13626 kernel: Switched APIC routing to physical x2apic.
+May 26 13:43:26 ik1-307-13626 kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+May 26 13:43:26 ik1-307-13626 kernel: smpboot: CPU0: Intel(R) Xeon(R) CPU E5-2650 v2 @ 2.60GHz (fam: 06, model: 3e, stepping: 04)
+May 26 13:43:26 ik1-307-13626 kernel: Performance Events: 16-deep LBR, IvyBridge events, Intel PMU driver.
+May 26 13:43:26 ik1-307-13626 kernel: ... version:                2
+May 26 13:43:26 ik1-307-13626 kernel: ... bit width:              48
+May 26 13:43:26 ik1-307-13626 kernel: ... generic registers:      4
+May 26 13:43:26 ik1-307-13626 kernel: ... value mask:             0000ffffffffffff
+May 26 13:43:26 ik1-307-13626 kernel: ... max period:             000000007fffffff
+May 26 13:43:26 ik1-307-13626 kernel: ... fixed-purpose events:   3
+May 26 13:43:26 ik1-307-13626 kernel: ... event mask:             000000070000000f
+May 26 13:43:26 ik1-307-13626 kernel: KVM setup paravirtual spinlock
+May 26 13:43:26 ik1-307-13626 kernel: Brought up 1 CPUs
+May 26 13:43:26 ik1-307-13626 kernel: smpboot: Total of 1 processors activated (5199.99 BogoMIPS)
+May 26 13:43:26 ik1-307-13626 kernel: devtmpfs: initialized
+May 26 13:43:26 ik1-307-13626 kernel: EVM: security.selinux
+May 26 13:43:26 ik1-307-13626 kernel: EVM: security.ima
+May 26 13:43:26 ik1-307-13626 kernel: EVM: security.capability
+May 26 13:43:26 ik1-307-13626 kernel: atomic64 test passed for x86-64 platform with CX8 and with SSE
+May 26 13:43:26 ik1-307-13626 kernel: pinctrl core: initialized pinctrl subsystem
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 16
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: bus type PCI registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+May 26 13:43:26 ik1-307-13626 kernel: PCI: Using configuration type 1 for base access
+May 26 13:43:26 ik1-307-13626 kernel: core: PMU erratum BJ122, BV98, HSD29 workaround disabled, HT off
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Added _OSI(Module Device)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Added _OSI(Processor Device)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Added _OSI(3.0 _SCP Extensions)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Added _OSI(Processor Aggregator Device)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Interpreter enabled
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: (supports S0 S3 S4 S5)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Using IOAPIC for interrupt routing
+May 26 13:43:26 ik1-307-13626 kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+May 26 13:43:26 ik1-307-13626 kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI]
+May 26 13:43:26 ik1-307-13626 kernel: acpi PNP0A03:00: _OSC failed (AE_NOT_FOUND); disabling ASPM
+May 26 13:43:26 ik1-307-13626 kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [3] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [4] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [5] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [6] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [7] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [8] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [9] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [10] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [11] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [12] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [13] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [14] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [15] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [16] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [17] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [18] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [19] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [20] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [21] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [22] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [23] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [24] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [25] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [26] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [27] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [28] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [29] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [30] registered
+May 26 13:43:26 ik1-307-13626 kernel: acpiphp: Slot [31] registered
+May 26 13:43:26 ik1-307-13626 kernel: PCI host bridge to bus 0000:00
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xadff window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [io  0xae0f-0xaeff window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [io  0xaf20-0xafdf window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [io  0xafe4-0xffff window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+May 26 13:43:26 ik1-307-13626 kernel: pci_bus 0000:00: root bus resource [mem 0x20000000-0xfebfffff window]
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.3: quirk: [io  0xb000-0xb03f] claimed by PIIX4 ACPI
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.3: quirk: [io  0xb100-0xb10f] claimed by PIIX4 SMB
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKA] (IRQs 5 *10 11)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKB] (IRQs 5 *10 11)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKC] (IRQs 5 10 *11)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKD] (IRQs 5 10 *11)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKS] (IRQs *9)
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Enabled 16 GPEs in block 00 to 0F
+May 26 13:43:26 ik1-307-13626 kernel: vgaarb: device added: PCI:0000:00:02.0,decodes=io+mem,owns=io+mem,locks=none
+May 26 13:43:26 ik1-307-13626 kernel: vgaarb: loaded
+May 26 13:43:26 ik1-307-13626 kernel: vgaarb: bridge control possible 0000:00:02.0
+May 26 13:43:26 ik1-307-13626 kernel: SCSI subsystem initialized
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: bus type USB registered
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new interface driver usbfs
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new interface driver hub
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new device driver usb
+May 26 13:43:26 ik1-307-13626 kernel: PCI: Using ACPI for IRQ routing
+May 26 13:43:26 ik1-307-13626 kernel: NetLabel: Initializing
+May 26 13:43:26 ik1-307-13626 kernel: NetLabel:  domain hash size = 128
+May 26 13:43:26 ik1-307-13626 kernel: NetLabel:  protocols = UNLABELED CIPSOv4
+May 26 13:43:26 ik1-307-13626 kernel: NetLabel:  unlabeled traffic allowed by default
+May 26 13:43:26 ik1-307-13626 kernel: HPET: 3 timers in total, 0 timers will be used for per-cpu timer
+May 26 13:43:26 ik1-307-13626 kernel: hpet0: at MMIO 0xfed00000, IRQs 2, 8, 0
+May 26 13:43:26 ik1-307-13626 kernel: hpet0: 3 comparators, 64-bit 100.000000 MHz counter
+May 26 13:43:26 ik1-307-13626 kernel: Switched to clocksource kvm-clock
+May 26 13:43:26 ik1-307-13626 kernel: pnp: PnP ACPI init
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: bus type PNP registered
+May 26 13:43:26 ik1-307-13626 kernel: pnp: PnP ACPI: found 5 devices
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: bus type PNP unregistered
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 2
+May 26 13:43:26 ik1-307-13626 kernel: TCP established hash table entries: 4096 (order: 3, 32768 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: TCP bind hash table entries: 4096 (order: 4, 65536 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: TCP: Hash tables configured (established 4096 bind 4096)
+May 26 13:43:26 ik1-307-13626 kernel: TCP: reno registered
+May 26 13:43:26 ik1-307-13626 kernel: UDP hash table entries: 256 (order: 1, 8192 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 1
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.0: PIIX3: Enabling Passive Release
+May 26 13:43:26 ik1-307-13626 kernel: pci 0000:00:01.0: Activating ISA DMA hang workarounds
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKD] enabled at IRQ 11
+May 26 13:43:26 ik1-307-13626 kernel: Unpacking initramfs...
+May 26 13:43:26 ik1-307-13626 kernel: Freeing initrd memory: 18208k freed
+May 26 13:43:26 ik1-307-13626 kernel: sha1_ssse3: Using AVX optimized SHA-1 implementation
+May 26 13:43:26 ik1-307-13626 kernel: sha256_ssse3: Using AVX optimized SHA-256 implementation
+May 26 13:43:26 ik1-307-13626 kernel: futex hash table entries: 256 (order: 2, 16384 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: Initialise system trusted keyring
+May 26 13:43:26 ik1-307-13626 kernel: audit: initializing netlink socket (disabled)
+May 26 13:43:26 ik1-307-13626 kernel: type=2000 audit(1495773805.593:1): initialized
+May 26 13:43:26 ik1-307-13626 kernel: HugeTLB registered 1 GB page size, pre-allocated 0 pages
+May 26 13:43:26 ik1-307-13626 kernel: HugeTLB registered 2 MB page size, pre-allocated 0 pages
+May 26 13:43:26 ik1-307-13626 kernel: zpool: loaded
+May 26 13:43:26 ik1-307-13626 kernel: zbud: loaded
+May 26 13:43:26 ik1-307-13626 kernel: VFS: Disk quotas dquot_6.5.2
+May 26 13:43:26 ik1-307-13626 kernel: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+May 26 13:43:26 ik1-307-13626 kernel: msgmni has been set to 974
+May 26 13:43:26 ik1-307-13626 kernel: Key type big_key registered
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 38
+May 26 13:43:26 ik1-307-13626 kernel: Key type asymmetric registered
+May 26 13:43:26 ik1-307-13626 kernel: Asymmetric key parser 'x509' registered
+May 26 13:43:26 ik1-307-13626 kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+May 26 13:43:26 ik1-307-13626 kernel: io scheduler noop registered (default)
+May 26 13:43:26 ik1-307-13626 kernel: io scheduler deadline registered
+May 26 13:43:26 ik1-307-13626 kernel: io scheduler cfq registered
+May 26 13:43:26 ik1-307-13626 kernel: pci_hotplug: PCI Hot Plug PCI Core version: 0.5
+May 26 13:43:26 ik1-307-13626 kernel: pciehp: PCI Express Hot Plug Controller Driver version: 0.4
+May 26 13:43:26 ik1-307-13626 kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+May 26 13:43:26 ik1-307-13626 kernel: ACPI: Power Button [PWRF]
+May 26 13:43:26 ik1-307-13626 kernel: GHES: HEST is not enabled!
+May 26 13:43:26 ik1-307-13626 kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+May 26 13:43:26 ik1-307-13626 kernel: 00:04: ttyS0 at I/O 0x3f8 (irq = 4) is a 16550A
+May 26 13:43:26 ik1-307-13626 kernel: Non-volatile memory driver v1.3
+May 26 13:43:26 ik1-307-13626 kernel: Linux agpgart interface v0.103
+May 26 13:43:26 ik1-307-13626 kernel: crash memory driver: version 1.1
+May 26 13:43:26 ik1-307-13626 kernel: rdac: device handler registered
+May 26 13:43:26 ik1-307-13626 kernel: hp_sw: device handler registered
+May 26 13:43:26 ik1-307-13626 kernel: emc: device handler registered
+May 26 13:43:26 ik1-307-13626 kernel: alua: device handler registered
+May 26 13:43:26 ik1-307-13626 kernel: libphy: Fixed MDIO Bus: probed
+May 26 13:43:26 ik1-307-13626 kernel: ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+May 26 13:43:26 ik1-307-13626 kernel: ehci-pci: EHCI PCI platform driver
+May 26 13:43:26 ik1-307-13626 kernel: ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+May 26 13:43:26 ik1-307-13626 kernel: ohci-pci: OHCI PCI platform driver
+May 26 13:43:26 ik1-307-13626 kernel: uhci_hcd: USB Universal Host Controller Interface driver
+May 26 13:43:26 ik1-307-13626 kernel: uhci_hcd 0000:00:01.2: UHCI Host Controller
+May 26 13:43:26 ik1-307-13626 kernel: uhci_hcd 0000:00:01.2: new USB bus registered, assigned bus number 1
+May 26 13:43:26 ik1-307-13626 kernel: uhci_hcd 0000:00:01.2: detected 2 ports
+May 26 13:43:26 ik1-307-13626 kernel: uhci_hcd 0000:00:01.2: irq 11, io base 0x0000c040
+May 26 13:43:26 ik1-307-13626 kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0001
+May 26 13:43:26 ik1-307-13626 kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+May 26 13:43:26 ik1-307-13626 kernel: usb usb1: Product: UHCI Host Controller
+May 26 13:43:26 ik1-307-13626 kernel: usb usb1: Manufacturer: Linux 3.10.0-514.16.1.el7.x86_64 uhci_hcd
+May 26 13:43:26 ik1-307-13626 kernel: usb usb1: SerialNumber: 0000:00:01.2
+May 26 13:43:26 ik1-307-13626 kernel: hub 1-0:1.0: USB hub found
+May 26 13:43:26 ik1-307-13626 kernel: hub 1-0:1.0: 2 ports detected
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new interface driver usbserial
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new interface driver usbserial_generic
+May 26 13:43:26 ik1-307-13626 kernel: usbserial: USB Serial support registered for generic
+May 26 13:43:26 ik1-307-13626 kernel: i8042: PNP: PS/2 Controller [PNP0303:KBD,PNP0f13:MOU] at 0x60,0x64 irq 1,12
+May 26 13:43:26 ik1-307-13626 kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+May 26 13:43:26 ik1-307-13626 kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+May 26 13:43:26 ik1-307-13626 kernel: mousedev: PS/2 mouse device common for all mice
+May 26 13:43:26 ik1-307-13626 kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input1
+May 26 13:43:26 ik1-307-13626 kernel: rtc_cmos 00:00: RTC can wake from S4
+May 26 13:43:26 ik1-307-13626 kernel: rtc_cmos 00:00: rtc core: registered rtc_cmos as rtc0
+May 26 13:43:26 ik1-307-13626 kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input2
+May 26 13:43:26 ik1-307-13626 kernel: rtc_cmos 00:00: alarms up to one day, 114 bytes nvram, hpet irqs
+May 26 13:43:26 ik1-307-13626 kernel: input: VirtualPS/2 VMware VMMouse as /devices/platform/i8042/serio1/input/input3
+May 26 13:43:26 ik1-307-13626 kernel: cpuidle: using governor menu
+May 26 13:43:26 ik1-307-13626 kernel: hidraw: raw HID events driver (C) Jiri Kosina
+May 26 13:43:26 ik1-307-13626 kernel: usbcore: registered new interface driver usbhid
+May 26 13:43:26 ik1-307-13626 kernel: usbhid: USB HID core driver
+May 26 13:43:26 ik1-307-13626 kernel: drop_monitor: Initializing network drop monitor service
+May 26 13:43:26 ik1-307-13626 kernel: TCP: cubic registered
+May 26 13:43:26 ik1-307-13626 kernel: Initializing XFRM netlink socket
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 10
+May 26 13:43:26 ik1-307-13626 kernel: NET: Registered protocol family 17
+May 26 13:43:26 ik1-307-13626 kernel: microcode: CPU0 sig=0x306e4, pf=0x1, revision=0x1
+May 26 13:43:26 ik1-307-13626 kernel: microcode: Microcode Update Driver: v2.01 <tigran@aivazian.fsnet.co.uk>, Peter Oruba
+May 26 13:43:26 ik1-307-13626 kernel: Loading compiled-in X.509 certificates
+May 26 13:43:26 ik1-307-13626 kernel: Loaded X.509 cert 'CentOS Linux kpatch signing key: ea0413152cde1d98ebdca3fe6f0230904c9ef717'
+May 26 13:43:26 ik1-307-13626 kernel: Loaded X.509 cert 'CentOS Linux Driver update signing key: 7f421ee0ab69461574bb358861dbe77762a4201b'
+May 26 13:43:26 ik1-307-13626 kernel: Loaded X.509 cert 'CentOS Linux kernel signing key: 3fe1eb8b4f91d484cd55448454a024de5634e106'
+May 26 13:43:26 ik1-307-13626 kernel: registered taskstats version 1
+May 26 13:43:26 ik1-307-13626 kernel: Key type trusted registered
+May 26 13:43:26 ik1-307-13626 kernel: Key type encrypted registered
+May 26 13:43:26 ik1-307-13626 kernel: IMA: No TPM chip found, activating TPM-bypass!
+May 26 13:43:26 ik1-307-13626 kernel: rtc_cmos 00:00: setting system clock to 2017-05-26 04:43:26 UTC (1495773806)
+May 26 13:43:26 ik1-307-13626 kernel: Freeing unused kernel memory: 1680k freed
+May 26 13:43:26 ik1-307-13626 systemd[1]: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+May 26 13:43:26 ik1-307-13626 systemd[1]: Detected virtualization kvm.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Detected architecture x86-64.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Running in initial RAM disk.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Set hostname to <localhost.localdomain>.
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: new full-speed USB device number 2 using uhci_hcd
+May 26 13:43:26 ik1-307-13626 systemd[1]: Reached target Swap.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Swap.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Reached target Timers.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Timers.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Reached target Local File Systems.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Local File Systems.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Created slice Root Slice.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Root Slice.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Listening on udev Kernel Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting udev Kernel Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Listening on Journal Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Journal Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Listening on udev Control Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting udev Control Socket.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Reached target Sockets.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Sockets.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Created slice System Slice.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting System Slice.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Create list of required static device nodes for the current kernel...
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Apply Kernel Variables...
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Setup Virtual Console...
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Journal Service...
+May 26 13:43:26 ik1-307-13626 systemd[1]: Reached target Slices.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting Slices.
+May 26 13:43:26 ik1-307-13626 systemd[1]: Starting dracut cmdline hook...
+May 26 13:43:26 ik1-307-13626 journal: Journal started
+May 26 13:43:26 ik1-307-13626 systemd[1]: Started Journal Service.
+May 26 13:43:26 ik1-307-13626 systemd: Started Create list of required static device nodes for the current kernel.
+May 26 13:43:26 ik1-307-13626 systemd: Started Apply Kernel Variables.
+May 26 13:43:26 ik1-307-13626 systemd: Started Setup Virtual Console.
+May 26 13:43:26 ik1-307-13626 systemd: Starting Create Static Device Nodes in /dev...
+May 26 13:43:26 ik1-307-13626 systemd: Started Create Static Device Nodes in /dev.
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: New USB device found, idVendor=0627, idProduct=0001
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=5
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: Product: QEMU USB Tablet
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: Manufacturer: QEMU
+May 26 13:43:26 ik1-307-13626 kernel: usb 1-1: SerialNumber: 42
+May 26 13:43:26 ik1-307-13626 kernel: input: QEMU QEMU USB Tablet as /devices/pci0000:00/0000:00:01.2/usb1/1-1/1-1:1.0/input/input4
+May 26 13:43:26 ik1-307-13626 kernel: hid-generic 0003:0627:0001.0001: input,hidraw0: USB HID v0.01 Pointer [QEMU QEMU USB Tablet] on usb-0000:00:01.2-1/input0
+May 26 13:43:26 ik1-307-13626 kernel: tsc: Refined TSC clocksource calibration: 2599.983 MHz
+May 26 13:43:26 ik1-307-13626 systemd: Started dracut cmdline hook.
+May 26 13:43:26 ik1-307-13626 systemd: Starting dracut pre-udev hook...
+May 26 13:43:27 ik1-307-13626 systemd: Started dracut pre-udev hook.
+May 26 13:43:27 ik1-307-13626 systemd: Starting udev Kernel Device Manager...
+May 26 13:43:27 ik1-307-13626 systemd-udevd: starting version 219
+May 26 13:43:27 ik1-307-13626 systemd-udevd: Network interface NamePolicy= disabled on kernel command line, ignoring.
+May 26 13:43:27 ik1-307-13626 systemd: Started udev Kernel Device Manager.
+May 26 13:43:27 ik1-307-13626 systemd: Starting udev Coldplug all Devices...
+May 26 13:43:27 ik1-307-13626 systemd: Mounting Configuration File System...
+May 26 13:43:27 ik1-307-13626 systemd: Mounted Configuration File System.
+May 26 13:43:27 ik1-307-13626 kernel: FDC 0 is a S82078B
+May 26 13:43:27 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKC] enabled at IRQ 10
+May 26 13:43:27 ik1-307-13626 kernel: [drm] Initialized drm 1.1.0 20060810
+May 26 13:43:27 ik1-307-13626 systemd: Started udev Coldplug all Devices.
+May 26 13:43:27 ik1-307-13626 systemd: Starting dracut initqueue hook...
+May 26 13:43:27 ik1-307-13626 kernel: virtio-pci 0000:00:03.0: virtio_pci: leaving for legacy driver
+May 26 13:43:27 ik1-307-13626 systemd: Reached target System Initialization.
+May 26 13:43:27 ik1-307-13626 systemd: Starting System Initialization.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Show Plymouth Boot Screen...
+May 26 13:43:27 ik1-307-13626 kernel: scsi host0: ata_piix
+May 26 13:43:27 ik1-307-13626 systemd: Received SIGRTMIN+20 from PID 226 (plymouthd).
+May 26 13:43:27 ik1-307-13626 systemd: Started Show Plymouth Boot Screen.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Paths.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Paths.
+May 26 13:43:27 ik1-307-13626 systemd: Started Forward Password Requests to Plymouth Directory Watch.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Forward Password Requests to Plymouth Directory Watch.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Basic System.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Basic System.
+May 26 13:43:27 ik1-307-13626 kernel: scsi host1: ata_piix
+May 26 13:43:27 ik1-307-13626 kernel: ata1: PATA max MWDMA2 cmd 0x1f0 ctl 0x3f6 bmdma 0xc0e0 irq 14
+May 26 13:43:27 ik1-307-13626 kernel: ata2: PATA max MWDMA2 cmd 0x170 ctl 0x376 bmdma 0xc0e8 irq 15
+May 26 13:43:27 ik1-307-13626 kernel: virtio-pci 0000:00:04.0: virtio_pci: leaving for legacy driver
+May 26 13:43:27 ik1-307-13626 kernel: [drm] Found bochs VGA, ID 0xb0c0.
+May 26 13:43:27 ik1-307-13626 kernel: [drm] Framebuffer size 16384 kB @ 0xfd000000, mmio @ 0xfebd0000.
+May 26 13:43:27 ik1-307-13626 kernel: [TTM] Zone  kernel: Available graphics memory: 250226 kiB
+May 26 13:43:27 ik1-307-13626 kernel: [TTM] Initializing pool allocator
+May 26 13:43:27 ik1-307-13626 kernel: [TTM] Initializing DMA pool allocator
+May 26 13:43:27 ik1-307-13626 kernel: fbcon: bochsdrmfb (fb0) is primary device
+May 26 13:43:27 ik1-307-13626 kernel: Console: switching to colour frame buffer device 128x48
+May 26 13:43:27 ik1-307-13626 kernel: bochs-drm 0000:00:02.0: fb0: bochsdrmfb frame buffer device
+May 26 13:43:27 ik1-307-13626 kernel: [drm] Initialized bochs-drm 1.0.0 20130925 for 0000:00:02.0 on minor 0
+May 26 13:43:27 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKA] enabled at IRQ 10
+May 26 13:43:27 ik1-307-13626 kernel: virtio-pci 0000:00:05.0: virtio_pci: leaving for legacy driver
+May 26 13:43:27 ik1-307-13626 kernel: ACPI: PCI Interrupt Link [LNKB] enabled at IRQ 11
+May 26 13:43:27 ik1-307-13626 kernel: virtio-pci 0000:00:06.0: virtio_pci: leaving for legacy driver
+May 26 13:43:27 ik1-307-13626 kernel: virtio-pci 0000:00:07.0: virtio_pci: leaving for legacy driver
+May 26 13:43:27 ik1-307-13626 kernel: ata2.00: ATAPI: QEMU DVD-ROM, 2.0.0, max UDMA/100
+May 26 13:43:27 ik1-307-13626 kernel: ata2.00: configured for MWDMA2
+May 26 13:43:27 ik1-307-13626 kernel: scsi 1:0:0:0: CD-ROM            QEMU     QEMU DVD-ROM     2.0. PQ: 0 ANSI: 5
+May 26 13:43:27 ik1-307-13626 kernel: vda: vda1 vda2 vda3 vda4
+May 26 13:43:27 ik1-307-13626 kernel: sr 1:0:0:0: [sr0] scsi3-mmc drive: 4x/4x cd/rw xa/form2 tray
+May 26 13:43:27 ik1-307-13626 kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+May 26 13:43:27 ik1-307-13626 systemd: Found device /dev/disk/by-uuid/c9321269-7178-43b4-b696-4de4e92a4518.
+May 26 13:43:27 ik1-307-13626 systemd: Starting File System Check on /dev/disk/by-uuid/c9321269-7178-43b4-b696-4de4e92a4518...
+May 26 13:43:27 ik1-307-13626 systemd-fsck: /sbin/fsck.xfs: XFS file system.
+May 26 13:43:27 ik1-307-13626 systemd: Started File System Check on /dev/disk/by-uuid/c9321269-7178-43b4-b696-4de4e92a4518.
+May 26 13:43:27 ik1-307-13626 systemd: Started dracut initqueue hook.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Remote File Systems (Pre).
+May 26 13:43:27 ik1-307-13626 systemd: Starting Remote File Systems (Pre).
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Remote File Systems.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Remote File Systems.
+May 26 13:43:27 ik1-307-13626 systemd: Mounting /sysroot...
+May 26 13:43:27 ik1-307-13626 kernel: SGI XFS with ACLs, security attributes, no debug enabled
+May 26 13:43:27 ik1-307-13626 kernel: XFS (vda4): Mounting V4 Filesystem
+May 26 13:43:27 ik1-307-13626 kernel: XFS (vda4): Ending clean mount
+May 26 13:43:27 ik1-307-13626 systemd: Mounted /sysroot.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Initrd Root File System.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Initrd Root File System.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Reload Configuration from the Real Root...
+May 26 13:43:27 ik1-307-13626 systemd: Reloading.
+May 26 13:43:27 ik1-307-13626 systemd: Started Reload Configuration from the Real Root.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Initrd File Systems.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Initrd File Systems.
+May 26 13:43:27 ik1-307-13626 systemd: Reached target Initrd Default Target.
+May 26 13:43:27 ik1-307-13626 systemd: Starting Initrd Default Target.
+May 26 13:43:27 ik1-307-13626 systemd: Starting dracut pre-pivot and cleanup hook...
+May 26 13:43:28 ik1-307-13626 systemd: Started dracut pre-pivot and cleanup hook.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Cleaning Up and Shutting Down Daemons...
+May 26 13:43:28 ik1-307-13626 systemd: Starting Plymouth switch root service...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Timers.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Timers.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped Cleaning Up and Shutting Down Daemons.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped dracut pre-pivot and cleanup hook.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping dracut pre-pivot and cleanup hook...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Remote File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Remote File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Remote File Systems (Pre).
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Remote File Systems (Pre).
+May 26 13:43:28 ik1-307-13626 systemd: Stopped dracut initqueue hook.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping dracut initqueue hook...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Initrd Default Target.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Initrd Default Target.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Basic System.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Basic System.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Slices.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Slices.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Sockets.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Sockets.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Paths.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Paths.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target System Initialization.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping System Initialization.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Swap.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Swap.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped target Local File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Local File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped udev Coldplug all Devices.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping udev Coldplug all Devices...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped Apply Kernel Variables.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Apply Kernel Variables...
+May 26 13:43:28 ik1-307-13626 systemd: Stopping udev Kernel Device Manager...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped udev Kernel Device Manager.
+May 26 13:43:28 ik1-307-13626 systemd: Stopped Create Static Device Nodes in /dev.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Create Static Device Nodes in /dev...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped Create list of required static device nodes for the current kernel.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping Create list of required static device nodes for the current kernel...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped dracut pre-udev hook.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping dracut pre-udev hook...
+May 26 13:43:28 ik1-307-13626 systemd: Stopped dracut cmdline hook.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping dracut cmdline hook...
+May 26 13:43:28 ik1-307-13626 systemd: Closed udev Control Socket.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping udev Control Socket.
+May 26 13:43:28 ik1-307-13626 systemd: Closed udev Kernel Socket.
+May 26 13:43:28 ik1-307-13626 systemd: Stopping udev Kernel Socket.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Cleanup udevd DB...
+May 26 13:43:28 ik1-307-13626 systemd: Started Cleanup udevd DB.
+May 26 13:43:28 ik1-307-13626 systemd: Reached target Switch Root.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Switch Root.
+May 26 13:43:28 ik1-307-13626 systemd: Started Plymouth switch root service.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Switch Root...
+May 26 13:43:28 ik1-307-13626 systemd: Switching root.
+May 26 13:43:28 ik1-307-13626 journal: Journal stopped
+May 26 13:43:28 ik1-307-13626 journal: Runtime journal is using 4.0M (max allowed 24.4M, trying to leave 36.6M free of 240.3M available → current limit 24.4M).
+May 26 13:43:28 ik1-307-13626 journal: Runtime journal is using 4.0M (max allowed 24.4M, trying to leave 36.6M free of 240.3M available → current limit 24.4M).
+May 26 13:43:28 ik1-307-13626 systemd-journald[96]: Received SIGTERM from PID 1 (systemd).
+May 26 13:43:28 ik1-307-13626 kernel: SELinux:  Disabled at runtime.
+May 26 13:43:28 ik1-307-13626 kernel: type=1404 audit(1495773808.208:2): selinux=0 auid=4294967295 ses=4294967295
+May 26 13:43:28 ik1-307-13626 kernel: ip_tables: (C) 2000-2006 Netfilter Core Team
+May 26 13:43:28 ik1-307-13626 systemd[1]: Inserted module 'ip_tables'
+May 26 13:43:28 ik1-307-13626 journal: Journal started
+May 26 13:43:28 ik1-307-13626 systemd: systemd 219 running in system mode. (+PAM +AUDIT +SELINUX +IMA -APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ -LZ4 -SECCOMP +BLKID +ELFUTILS +KMOD +IDN)
+May 26 13:43:28 ik1-307-13626 systemd: Detected virtualization kvm.
+May 26 13:43:28 ik1-307-13626 systemd: Detected architecture x86-64.
+May 26 13:43:28 ik1-307-13626 systemd: Set hostname to <localhost.localdomain>.
+May 26 13:43:28 ik1-307-13626 systemd: Cannot add dependency httpd.service.org to multi-user.target, ignoring: Invalid argument
+May 26 13:43:28 ik1-307-13626 systemd: Cannot add dependency httpd.service.org to multi-user.target, ignoring: Invalid argument
+May 26 13:43:28 ik1-307-13626 systemd: Cannot add dependency httpd.service.org to multi-user.target, ignoring: Invalid argument
+May 26 13:43:28 ik1-307-13626 systemd: Cannot add dependency httpd.service.org to multi-user.target, ignoring: Invalid argument
+May 26 13:43:28 ik1-307-13626 systemd: Binding to IPv6 address not available since kernel does not support IPv6.
+May 26 13:43:28 ik1-307-13626 systemd: [/usr/lib/systemd/system/rpcbind.socket:6] Failed to parse address value, ignoring: [::]:111
+May 26 13:43:28 ik1-307-13626 systemd: Started Create list of required static device nodes for the current kernel.
+May 26 13:43:28 ik1-307-13626 systemd: Started LVM2 metadata daemon.
+May 26 13:43:28 ik1-307-13626 systemd: Starting LVM2 metadata daemon...
+May 26 13:43:28 ik1-307-13626 systemd: Starting Create Static Device Nodes in /dev...
+May 26 13:43:28 ik1-307-13626 systemd: Started Remount Root and Kernel File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Started Apply Kernel Variables.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Load/Save Random Seed...
+May 26 13:43:28 ik1-307-13626 systemd: Starting udev Coldplug all Devices...
+May 26 13:43:28 ik1-307-13626 systemd: Starting Configure read-only root support...
+May 26 13:43:28 ik1-307-13626 systemd: Starting Flush Journal to Persistent Storage...
+May 26 13:43:28 ik1-307-13626 systemd: Started Create Static Device Nodes in /dev.
+May 26 13:43:28 ik1-307-13626 systemd: Started Load/Save Random Seed.
+May 26 13:43:28 ik1-307-13626 systemd: Starting udev Kernel Device Manager...
+May 26 13:43:28 ik1-307-13626 journal: Runtime journal is using 4.0M (max allowed 24.4M, trying to leave 36.6M free of 240.3M available → current limit 24.4M).
+May 26 13:43:28 ik1-307-13626 systemd: Started Flush Journal to Persistent Storage.
+May 26 13:43:28 ik1-307-13626 systemd-udevd: starting version 219
+May 26 13:43:28 ik1-307-13626 systemd-udevd: Network interface NamePolicy= disabled on kernel command line, ignoring.
+May 26 13:43:28 ik1-307-13626 systemd: Started Configure read-only root support.
+May 26 13:43:28 ik1-307-13626 systemd: Started udev Coldplug all Devices.
+May 26 13:43:28 ik1-307-13626 systemd: Starting udev Wait for Complete Device Initialization...
+May 26 13:43:28 ik1-307-13626 systemd: Started udev Kernel Device Manager.
+May 26 13:43:28 ik1-307-13626 kernel: piix4_smbus 0000:00:01.3: SMBus Host Controller at 0xb100, revision 0
+May 26 13:43:28 ik1-307-13626 kernel: sr 1:0:0:0: Attached scsi generic sg0 type 5
+May 26 13:43:28 ik1-307-13626 kernel: input: PC Speaker as /devices/platform/pcspkr/input/input5
+May 26 13:43:28 ik1-307-13626 systemd: Found device /dev/ttyS0.
+May 26 13:43:28 ik1-307-13626 systemd: Found device /dev/disk/by-uuid/6a383227-8a0f-4415-8c25-846f0c01717c.
+May 26 13:43:28 ik1-307-13626 systemd: Activating swap /dev/disk/by-uuid/6a383227-8a0f-4415-8c25-846f0c01717c...
+May 26 13:43:28 ik1-307-13626 systemd: Found device /dev/disk/by-uuid/babdb772-614a-4bc8-8ee1-ccf2739a7bb6.
+May 26 13:43:28 ik1-307-13626 kernel: Adding 4194300k swap on /dev/vda3.  Priority:-1 extents:1 across:4194300k FS
+May 26 13:43:28 ik1-307-13626 systemd: Activated swap /dev/disk/by-uuid/6a383227-8a0f-4415-8c25-846f0c01717c.
+May 26 13:43:28 ik1-307-13626 systemd: Reached target Swap.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Swap.
+May 26 13:43:28 ik1-307-13626 kernel: AES CTR mode by8 optimization enabled
+May 26 13:43:28 ik1-307-13626 kernel: ppdev: user-space parallel port driver
+May 26 13:43:28 ik1-307-13626 systemd: Started Monitoring of LVM2 mirrors, snapshots etc. using dmeventd or progress polling.
+May 26 13:43:28 ik1-307-13626 systemd: Reached target Local File Systems (Pre).
+May 26 13:43:28 ik1-307-13626 systemd: Starting Local File Systems (Pre).
+May 26 13:43:28 ik1-307-13626 systemd: Mounting /boot...
+May 26 13:43:28 ik1-307-13626 kernel: alg: No test for __gcm-aes-aesni (__driver-gcm-aes-aesni)
+May 26 13:43:28 ik1-307-13626 kernel: XFS (vda2): Mounting V4 Filesystem
+May 26 13:43:28 ik1-307-13626 kernel: alg: No test for crc32 (crc32-pclmul)
+May 26 13:43:28 ik1-307-13626 systemd: Started udev Wait for Complete Device Initialization.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Activation of DM RAID sets...
+May 26 13:43:28 ik1-307-13626 kernel: XFS (vda2): Ending clean mount
+May 26 13:43:28 ik1-307-13626 systemd: Mounted /boot.
+May 26 13:43:28 ik1-307-13626 kernel: device-mapper: uevent: version 1.0.3
+May 26 13:43:28 ik1-307-13626 kernel: device-mapper: ioctl: 4.34.0-ioctl (2015-10-28) initialised: dm-devel@redhat.com
+May 26 13:43:28 ik1-307-13626 systemd: Started Activation of DM RAID sets.
+May 26 13:43:28 ik1-307-13626 systemd: Reached target Encrypted Volumes.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Encrypted Volumes.
+May 26 13:43:28 ik1-307-13626 systemd: Reached target Local File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Local File Systems.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Tell Plymouth To Write Out Runtime Data...
+May 26 13:43:28 ik1-307-13626 systemd: Starting Import network configuration from initramfs...
+May 26 13:43:28 ik1-307-13626 systemd: Started Import network configuration from initramfs.
+May 26 13:43:28 ik1-307-13626 systemd: Starting Create Volatile Files and Directories...
+May 26 13:43:28 ik1-307-13626 systemd: Started Tell Plymouth To Write Out Runtime Data.
+May 26 13:43:29 ik1-307-13626 systemd: Started Create Volatile Files and Directories.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Security Auditing Service...
+May 26 13:43:29 ik1-307-13626 auditd[473]: Started dispatcher: /sbin/audispd pid: 483
+May 26 13:43:29 ik1-307-13626 kernel: type=1305 audit(1495773809.033:3): audit_pid=473 old=0 auid=4294967295 ses=4294967295 res=1
+May 26 13:43:29 ik1-307-13626 audispd: No plugins found, exiting
+May 26 13:43:29 ik1-307-13626 augenrules: /sbin/augenrules: No change
+May 26 13:43:29 ik1-307-13626 auditd[473]: Init complete, auditd 2.6.5 listening for events (startup state enable)
+May 26 13:43:29 ik1-307-13626 augenrules: No rules
+May 26 13:43:29 ik1-307-13626 augenrules: enabled 1
+May 26 13:43:29 ik1-307-13626 augenrules: failure 1
+May 26 13:43:29 ik1-307-13626 augenrules: pid 473
+May 26 13:43:29 ik1-307-13626 augenrules: rate_limit 0
+May 26 13:43:29 ik1-307-13626 augenrules: backlog_limit 320
+May 26 13:43:29 ik1-307-13626 augenrules: lost 0
+May 26 13:43:29 ik1-307-13626 augenrules: backlog 1
+May 26 13:43:29 ik1-307-13626 systemd: Started Security Auditing Service.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Update UTMP about System Boot/Shutdown...
+May 26 13:43:29 ik1-307-13626 systemd: Started Update UTMP about System Boot/Shutdown.
+May 26 13:43:29 ik1-307-13626 systemd: Reached target System Initialization.
+May 26 13:43:29 ik1-307-13626 systemd: Starting System Initialization.
+May 26 13:43:29 ik1-307-13626 systemd: Started Daily Cleanup of Temporary Directories.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Daily Cleanup of Temporary Directories.
+May 26 13:43:29 ik1-307-13626 systemd: Reached target Timers.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Timers.
+May 26 13:43:29 ik1-307-13626 systemd: Listening on D-Bus System Message Bus Socket.
+May 26 13:43:29 ik1-307-13626 systemd: Starting D-Bus System Message Bus Socket.
+May 26 13:43:29 ik1-307-13626 systemd: Listening on RPCbind Server Activation Socket.
+May 26 13:43:29 ik1-307-13626 systemd: Starting RPCbind Server Activation Socket.
+May 26 13:43:29 ik1-307-13626 systemd: Reached target Sockets.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Sockets.
+May 26 13:43:29 ik1-307-13626 systemd: Started Flexible branding.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Flexible branding.
+May 26 13:43:29 ik1-307-13626 systemd: Reached target Paths.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Paths.
+May 26 13:43:29 ik1-307-13626 systemd: Reached target Basic System.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Basic System.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Dump dmesg to /var/log/dmesg...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Authorization Manager...
+May 26 13:43:29 ik1-307-13626 systemd: Starting IPv4 firewall with iptables...
+May 26 13:43:29 ik1-307-13626 systemd: Started libstoragemgmt plug-in server daemon.
+May 26 13:43:29 ik1-307-13626 systemd: Starting libstoragemgmt plug-in server daemon...
+May 26 13:43:29 ik1-307-13626 systemd: Started D-Bus System Message Bus.
+May 26 13:43:29 ik1-307-13626 polkitd[497]: Started polkitd version 0.112
+May 26 13:43:29 ik1-307-13626 systemd: Starting D-Bus System Message Bus...
+May 26 13:43:29 ik1-307-13626 systemd: Started irqbalance daemon.
+May 26 13:43:29 ik1-307-13626 systemd: Starting irqbalance daemon...
+May 26 13:43:29 ik1-307-13626 systemd: Started Hardware RNG Entropy Gatherer Daemon.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Hardware RNG Entropy Gatherer Daemon...
+May 26 13:43:29 ik1-307-13626 systemd: Started Self Monitoring and Reporting Technology (SMART) Daemon.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Self Monitoring and Reporting Technology (SMART) Daemon...
+May 26 13:43:29 ik1-307-13626 rngd: Unable to open file: /dev/tpm0
+May 26 13:43:29 ik1-307-13626 systemd: Starting IPv6 firewall with ip6tables...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Permit User Sessions...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Network Manager...
+May 26 13:43:29 ik1-307-13626 /usr/sbin/irqbalance: Balancing is ineffective on systems with a single cpu.  Shutting down
+May 26 13:43:29 ik1-307-13626 systemd: Starting Resets System Activity Logs...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Login Service...
+May 26 13:43:29 ik1-307-13626 systemd: Started ABRT Automated Bug Reporting Tool.
+May 26 13:43:29 ik1-307-13626 systemd: Starting ABRT Automated Bug Reporting Tool...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Install ABRT coredump hook...
+May 26 13:43:29 ik1-307-13626 systemd: Started ABRT kernel log watcher.
+May 26 13:43:29 ik1-307-13626 systemd: Starting ABRT kernel log watcher...
+May 26 13:43:29 ik1-307-13626 systemd: Starting NTP client/server...
+May 26 13:43:29 ik1-307-13626 systemd: Started Dump dmesg to /var/log/dmesg.
+May 26 13:43:29 ik1-307-13626 systemd: Started Permit User Sessions.
+May 26 13:43:29 ik1-307-13626 systemd: Started Resets System Activity Logs.
+May 26 13:43:29 ik1-307-13626 chronyd[547]: chronyd version 2.1.1 starting (+CMDMON +NTP +REFCLOCK +RTC +PRIVDROP +DEBUG +ASYNCDNS +IPV6 +SECHASH)
+May 26 13:43:29 ik1-307-13626 systemd: Started Authorization Manager.
+May 26 13:43:29 ik1-307-13626 systemd-logind: New seat seat0.
+May 26 13:43:29 ik1-307-13626 systemd-logind: Watching system buttons on /dev/input/event0 (Power Button)
+May 26 13:43:29 ik1-307-13626 systemd: Started Login Service.
+May 26 13:43:29 ik1-307-13626 systemd: Started Job spooling tools.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Job spooling tools...
+May 26 13:43:29 ik1-307-13626 smartd[513]: smartd 6.2 2013-07-26 r3841 [x86_64-linux-3.10.0-514.16.1.el7.x86_64] (local build)
+May 26 13:43:29 ik1-307-13626 smartd[513]: Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+May 26 13:43:29 ik1-307-13626 smartd[513]: Opened configuration file /etc/smartmontools/smartd.conf
+May 26 13:43:29 ik1-307-13626 smartd[513]: Configuration file /etc/smartmontools/smartd.conf was parsed, found DEVICESCAN, scanning devices
+May 26 13:43:29 ik1-307-13626 smartd[513]: Problem creating device name scan list
+May 26 13:43:29 ik1-307-13626 smartd[513]: In the system's table of devices NO devices found to scan
+May 26 13:43:29 ik1-307-13626 smartd[513]: Monitoring 0 ATA and 0 SCSI devices
+May 26 13:43:29 ik1-307-13626 systemd: Starting Wait for Plymouth Boot Screen to Quit...
+May 26 13:43:29 ik1-307-13626 kernel: nf_conntrack version 0.5.0 (3909 buckets, 15636 max)
+May 26 13:43:29 ik1-307-13626 systemd: Started Command Scheduler.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Command Scheduler...
+May 26 13:43:29 ik1-307-13626 systemd: Starting Terminate Plymouth Boot Screen...
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.4010] NetworkManager (version 1.4.0-19.el7_3) is starting...
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.4014] Read config: /etc/NetworkManager/NetworkManager.conf
+May 26 13:43:29 ik1-307-13626 kernel: ip6_tables: (C) 2000-2006 Netfilter Core Team
+May 26 13:43:29 ik1-307-13626 chronyd[547]: Frequency -1.907 +/- 11.351 ppm read from /var/lib/chrony/drift
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.4622] manager[0x7fe8e4dc7080]: monitoring kernel firmware directory '/lib/firmware'.
+May 26 13:43:29 ik1-307-13626 abrtd: Init complete, entering main loop
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.4766] dns-mgr[0x7fe8e4da6aa0]: init: dns=default, rc-manager=file
+May 26 13:43:29 ik1-307-13626 systemd: Started Network Manager.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Network Manager Wait Online...
+May 26 13:43:29 ik1-307-13626 systemd: Started NTP client/server.
+May 26 13:43:29 ik1-307-13626 dbus[501]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+May 26 13:43:29 ik1-307-13626 dbus-daemon: dbus[501]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service'
+May 26 13:43:29 ik1-307-13626 systemd: Starting Network Manager Script Dispatcher Service...
+May 26 13:43:29 ik1-307-13626 iptables.init: iptables: Applying firewall rules: [  OK  ]
+May 26 13:43:29 ik1-307-13626 systemd: Started IPv4 firewall with iptables.
+May 26 13:43:29 ik1-307-13626 systemd: Started Install ABRT coredump hook.
+May 26 13:43:29 ik1-307-13626 dbus[501]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 26 13:43:29 ik1-307-13626 dbus-daemon: dbus[501]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+May 26 13:43:29 ik1-307-13626 systemd: Started Network Manager Script Dispatcher Service.
+May 26 13:43:29 ik1-307-13626 ip6tables.init: ip6tables: Applying firewall rules: [  OK  ]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.5919] settings: loaded plugin ifcfg-rh: (c) 2007 - 2015 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list. (/usr/lib64/NetworkManager/libnm-settings-plugin-ifcfg-rh.so)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.5939] settings: loaded plugin iBFT: (c) 2014 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list. (/usr/lib64/NetworkManager/libnm-settings-plugin-ibft.so)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.5940] settings: loaded plugin keyfile: (c) 2007 - 2015 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.5976] ifcfg-rh: new connection /etc/sysconfig/network-scripts/ifcfg-eth0 (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03,"システム eth0")
+May 26 13:43:29 ik1-307-13626 systemd: Started IPv6 firewall with ip6tables.
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6032] ifcfg-rh: new connection /etc/sysconfig/network-scripts/ifcfg-eth1 (9c92fad9-6ecb-3e6c-eb4d-8a47c6f50c04,"システム eth1")
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6043] ifcfg-rh: new connection /etc/sysconfig/network-scripts/ifcfg-eth2 (3a73717e-65ab-93e8-b518-24f5af32dc0d,"システム eth2")
+May 26 13:43:29 ik1-307-13626 dbus[501]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+May 26 13:43:29 ik1-307-13626 dbus-daemon: dbus[501]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service'
+May 26 13:43:29 ik1-307-13626 systemd: Starting Hostname Service...
+May 26 13:43:29 ik1-307-13626 dbus[501]: [system] Successfully activated service 'org.freedesktop.hostname1'
+May 26 13:43:29 ik1-307-13626 dbus-daemon: dbus[501]: [system] Successfully activated service 'org.freedesktop.hostname1'
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6540] settings: hostname: using hostnamed
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6541] settings: hostname changed from (none) to "localhost.localdomain"
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6551] dhcp-init: Using DHCP client 'dhclient'
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6551] manager: WiFi enabled by radio killswitch; enabled by state file
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6551] manager: WWAN enabled by radio killswitch; enabled by state file
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6552] manager: Networking is enabled by state file
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6552] Loaded device plugin: NMVxlanFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6552] Loaded device plugin: NMVlanFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6553] Loaded device plugin: NMVethFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6553] Loaded device plugin: NMTunFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6553] Loaded device plugin: NMMacvlanFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6553] Loaded device plugin: NMIPTunnelFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6553] Loaded device plugin: NMInfinibandFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6554] Loaded device plugin: NMEthernetFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6554] Loaded device plugin: NMBridgeFactory (internal)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6554] Loaded device plugin: NMBondFactory (internal)
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:1 'hostname': new request (3 scripts)
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:1 'hostname': start running ordered scripts...
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6600] Loaded device plugin: NMTeamFactory (/usr/lib64/NetworkManager/libnm-device-plugin-team.so)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6609] device (lo): link connected
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6630] manager: (lo): new Generic device (/org/freedesktop/NetworkManager/Devices/0)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6660] manager: (eth0): new Ethernet device (/org/freedesktop/NetworkManager/Devices/1)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6719] device (eth0): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+May 26 13:43:29 ik1-307-13626 kernel: IPv6: ADDRCONF(NETDEV_UP): eth0: link is not ready
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6924] device (eth0): link connected
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6975] manager: (eth1): new Ethernet device (/org/freedesktop/NetworkManager/Devices/2)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.6999] device (eth1): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+May 26 13:43:29 ik1-307-13626 kernel: IPv6: ADDRCONF(NETDEV_UP): eth1: link is not ready
+May 26 13:43:29 ik1-307-13626 systemd: Received SIGRTMIN+21 from PID 226 (plymouthd).
+May 26 13:43:29 ik1-307-13626 systemd: Started Wait for Plymouth Boot Screen to Quit.
+May 26 13:43:29 ik1-307-13626 systemd: Started Terminate Plymouth Boot Screen.
+May 26 13:43:29 ik1-307-13626 systemd: Started Hostname Service.
+May 26 13:43:29 ik1-307-13626 systemd: Started Getty on tty1.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Getty on tty1...
+May 26 13:43:29 ik1-307-13626 systemd: Started Serial Getty on ttyS0.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Serial Getty on ttyS0...
+May 26 13:43:29 ik1-307-13626 systemd: Reached target Login Prompts.
+May 26 13:43:29 ik1-307-13626 systemd: Starting Login Prompts.
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7159] device (eth1): link connected
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7188] manager: (eth2): new Ethernet device (/org/freedesktop/NetworkManager/Devices/3)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7214] device (eth2): state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+May 26 13:43:29 ik1-307-13626 kernel: IPv6: ADDRCONF(NETDEV_UP): eth2: link is not ready
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7270] device (eth2): link connected
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7631] device (eth0): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7643] device (eth1): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7653] device (eth2): state change: unavailable -> disconnected (reason 'none') [20 30 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7755] policy: auto-activating connection 'システム eth0'
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7784] device (eth0): Activation: starting connection 'システム eth0' (5fb06bd0-0bb0-7ffb-45f1-d6edd65f3e03)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7790] device (eth0): state change: disconnected -> prepare (reason 'none') [30 40 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7797] manager: NetworkManager state is now CONNECTING
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7849] device (eth0): state change: prepare -> config (reason 'none') [40 50 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7873] device (eth0): state change: config -> ip-config (reason 'none') [50 70 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7918] device (eth0): state change: ip-config -> ip-check (reason 'none') [70 80 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7923] device (eth0): state change: ip-check -> secondaries (reason 'none') [80 90 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7926] device (eth0): state change: secondaries -> activated (reason 'none') [90 100 0]
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7927] manager: NetworkManager state is now CONNECTED_LOCAL
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:2 'connectivity-change': new request (3 scripts)
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:2 'connectivity-change': start running ordered scripts...
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7985] manager: NetworkManager state is now CONNECTED_GLOBAL
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.7986] policy: set 'システム eth0' (eth0) as default for IPv4 routing and DNS
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.8012] device (eth0): Activation: successful, device activated.
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:3 'up' [eth0]: new request (3 scripts)
+May 26 13:43:29 ik1-307-13626 NetworkManager[518]: <info>  [1495773809.8080] policy: setting system hostname to 'ik1-307-13626.vs.sakura.ne.jp' (from address lookup)
+May 26 13:43:29 ik1-307-13626 systemd-hostnamed: Changed host name to 'ik1-307-13626.vs.sakura.ne.jp'
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:4 'hostname': new request (3 scripts)
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:3 'up' [eth0]: start running ordered scripts...
+May 26 13:43:29 ik1-307-13626 nm-dispatcher: req:4 'hostname': start running ordered scripts...
+May 26 13:43:34 ik1-307-13626 chronyd[547]: Selected source 210.188.224.14
+May 26 13:43:34 ik1-307-13626 chronyd[547]: System clock wrong by 0.766317 seconds, adjustment started
+May 26 13:43:35 ik1-307-13626 NetworkManager[518]: <info>  [1495773815.3267] manager: startup complete
+May 26 13:43:35 ik1-307-13626 systemd: Started Network Manager Wait Online.
+May 26 13:43:35 ik1-307-13626 systemd: Starting LSB: Bring up/down networking...
+May 26 13:43:35 ik1-307-13626 network: ループバックインターフェイスを呼び込み中 [  OK  ]
+May 26 13:43:35 ik1-307-13626 network: インターフェース eth0 を活性化中:  [  OK  ]
+May 26 13:43:35 ik1-307-13626 systemd: Started LSB: Bring up/down networking.
+May 26 13:43:35 ik1-307-13626 systemd: Reached target Network.
+May 26 13:43:35 ik1-307-13626 systemd: Starting Network.
+May 26 13:43:35 ik1-307-13626 systemd: Starting Fail2Ban Service...
+May 26 13:43:35 ik1-307-13626 systemd: Starting PostgreSQL 9.4 database server...
+May 26 13:43:35 ik1-307-13626 systemd: Starting System Logging Service...
+May 26 13:43:35 ik1-307-13626 systemd: Reached target Network is Online.
+May 26 13:43:35 ik1-307-13626 systemd: Starting Network is Online.
+May 26 13:43:35 ik1-307-13626 systemd: Starting LSB: Supports the direct execution of binary formats....
+May 26 13:43:35 ik1-307-13626 systemd: Starting Postfix Mail Transport Agent...
+May 26 13:43:35 ik1-307-13626 systemd: Starting Dynamic System Tuning Daemon...
+May 26 13:43:35 ik1-307-13626 systemd: Starting OpenSSH server daemon...
+May 26 13:43:35 ik1-307-13626 systemd: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 819 (jexec)
+May 26 13:43:35 ik1-307-13626 systemd: Mounting Arbitrary Executable File Formats File System...
+May 26 13:43:35 ik1-307-13626 systemd: Started System Logging Service.
+May 26 13:43:35 ik1-307-13626 systemd: Mounted Arbitrary Executable File Formats File System.
+May 26 13:43:35 ik1-307-13626 systemd: Started OpenSSH server daemon.
+May 26 13:43:35 ik1-307-13626 jexec: Starting jexec services
+May 26 13:43:35 ik1-307-13626 systemd: Started LSB: Supports the direct execution of binary formats..
+May 26 13:43:35 ik1-307-13626 systemd: Starting SYSV: GeoServer...
+May 26 13:43:36 ik1-307-13626 ecommap: Starting GeoServer - ecom map
+May 26 13:43:36 ik1-307-13626 systemd: Started SYSV: GeoServer.
+May 26 13:43:36 ik1-307-13626 ecommap: GEOSERVER DATA DIR is /home/map/geoserver/data_dir
+May 26 13:43:36 ik1-307-13626 pg_ctl: < 2017-05-26 13:43:36.224 JST >LOG:  ログ出力をログ収集プロセスにリダイレクトしています
+May 26 13:43:36 ik1-307-13626 pg_ctl: < 2017-05-26 13:43:36.224 JST >ヒント:  ここからのログ出力はディレクトリ"pg_log"に現れます。
+May 26 13:43:36 ik1-307-13626 kernel: postgres (858): /proc/858/oom_adj is deprecated, please use /proc/858/oom_score_adj instead.
+May 26 13:43:36 ik1-307-13626 systemd: Started Dynamic System Tuning Daemon.
+May 26 13:43:36 ik1-307-13626 fail2ban-client: 2017-05-26 13:43:36,696 fail2ban.server         [877]: INFO    Starting Fail2ban v0.9.6
+May 26 13:43:36 ik1-307-13626 fail2ban-client: 2017-05-26 13:43:36,698 fail2ban.server         [877]: INFO    Starting in daemon mode
+May 26 13:43:36 ik1-307-13626 ecommap: 1 [main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger@71bb0662 via org.mortbay.log.Slf4jLog
+May 26 13:43:37 ik1-307-13626 systemd: Started PostgreSQL 9.4 database server.
+May 26 13:43:37 ik1-307-13626 systemd: Starting The Apache HTTP Server...
+May 26 13:43:37 ik1-307-13626 systemd: Started Fail2Ban Service.
+May 26 13:43:37 ik1-307-13626 kernel: Netfilter messages via NETLINK v0.30.
+May 26 13:43:37 ik1-307-13626 kernel: ip_set: protocol 6
+May 26 13:43:37 ik1-307-13626 ecommap: 773 [main] WARN org.mortbay.log - Deprecated configuration used for /home/map/geoserver/webapps
+May 26 13:43:37 ik1-307-13626 ecommap: 829 [main] WARN org.mortbay.log - Deprecated configuration used for ../webapps
+May 26 13:43:37 ik1-307-13626 ecommap: 830 [main] INFO org.mortbay.log - jetty-6.1.26
+May 26 13:43:37 ik1-307-13626 systemd: Started The Apache HTTP Server.
+May 26 13:43:37 ik1-307-13626 systemd: Started Postfix Mail Transport Agent.
+May 26 13:43:37 ik1-307-13626 systemd: Reached target Multi-User System.
+May 26 13:43:37 ik1-307-13626 systemd: Starting Multi-User System.
+May 26 13:43:37 ik1-307-13626 systemd: Starting Update UTMP about System Runlevel Changes...
+May 26 13:43:38 ik1-307-13626 systemd: Started Update UTMP about System Runlevel Changes.
+May 26 13:43:38 ik1-307-13626 systemd: Startup finished in 1.207s (kernel) + 1.686s (initrd) + 9.804s (userspace) = 12.699s.
+May 26 13:43:40 ik1-307-13626 ecommap: 3720 [main] INFO /geoserver - Initializing Spring root WebApplicationContext
+May 26 13:43:43 ik1-307-13626 ecommap: 26 5 13:43:43 WARN [config.CustomEditorConfigurer] - Passing PropertyEditor instances into CustomEditorConfigurer is deprecated: use PropertyEditorRegistrars or PropertyEditor class names instead. Offending key [org.geotools.util.Version; offending editor instance: org.geoserver.platform.util.VersionPropertyEditor@3bbd6d65
+May 26 13:43:44 ik1-307-13626 ecommap: 5 26, 2017 1:43:44 午後 org.geoserver.platform.GeoServerExtensions checkContext
+May 26 13:43:44 ik1-307-13626 ecommap: 警告: Extension lookup occured, but ApplicationContext is unset.
+May 26 13:43:48 ik1-307-13626 ecommap: 26 5 13:43:48 WARN [referencing.factory] - Axis elements found in a wkt definition, the force longitude first axis order hint might not be respected:
+May 26 13:43:48 ik1-307-13626 ecommap: PROJCS["WGS84 / Simple Mercator", GEOGCS["WGS 84", DATUM["WGS_1984", SPHEROID["WGS_1984", 6378137.0, 298.257223563]], PRIMEM["Greenwich", 0.0], UNIT["degree", 0.017453292519943295]], PROJECTION["Mercator_1SP_Google"], PARAMETER["latitude_of_origin", 0.0], PARAMETER["central_meridian", 0.0], PARAMETER["scale_factor", 1.0], PARAMETER["false_easting", 0.0], PARAMETER["false_northing", 0.0], UNIT["m", 1.0], AXIS["x", EAST], AXIS["y", NORTH], AUTHORITY["EPSG","54004"]]
+May 26 13:43:48 ik1-307-13626 ecommap: 26 5 13:43:48 WARN [org.geoserver] - Ignoring feature type directory /home/map/geoserver/data_dir/workspaces/map/map/datastore.xml_bak
+May 26 13:44:02 ik1-307-13626 ecommap: 26 5 13:44:02 WARN [geoserver.security] - /home/map/geoserver/data_dir/security/masterpw.info is a security risk. Please read this file and remove it afterward
+May 26 13:44:02 ik1-307-13626 ecommap: 26 5 13:44:02 WARN [geoserver.security] - /home/map/geoserver/data_dir/security/users.properties.old could be removed manually
+May 26 13:44:03 ik1-307-13626 ecommap: 26484 [main] INFO org.mortbay.log - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
+May 26 13:44:03 ik1-307-13626 ecommap: 26484 [main] INFO org.mortbay.log - No Transaction manager found - if your webapp requires one, please configure one.
+May 26 13:44:04 ik1-307-13626 ecommap: 27579 [main] INFO /map - Aliases are enabled
+May 26 13:44:04 ik1-307-13626 ecommap: 26 5 13:44:04 INFO [servlet.AuthProxyServlet] - ProxyInfo loaded : 0
+May 26 13:44:04 ik1-307-13626 ecommap: 27953 [main] INFO org.mortbay.log - Started SelectChannelConnector@0.0.0.0:8080
+May 26 13:44:55 ik1-307-13626 systemd: Created slice user-0.slice.
+May 26 13:44:55 ik1-307-13626 systemd: Starting user-0.slice.
+May 26 13:44:55 ik1-307-13626 systemd: Started Session 1 of user root.
+May 26 13:44:55 ik1-307-13626 systemd-logind: New session 1 of user root.
+May 26 13:44:55 ik1-307-13626 systemd: Starting Session 1 of user root.
+May 26 13:44:56 ik1-307-13626 dbus[501]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+May 26 13:44:56 ik1-307-13626 dbus-daemon: dbus[501]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+May 26 13:44:56 ik1-307-13626 dbus[501]: [system] Successfully activated service 'org.freedesktop.problems'
+May 26 13:44:56 ik1-307-13626 dbus-daemon: dbus[501]: [system] Successfully activated service 'org.freedesktop.problems'

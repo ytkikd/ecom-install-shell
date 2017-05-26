@@ -1,0 +1,73 @@
+May 26 11:52:46 ik1-307-13626 network: ループバックインターフェイスを呼び込み中 [  OK  ]
+May 26 11:52:46 ik1-307-13626 network: インターフェース eth0 を活性化中:  [  OK  ]
+May 26 11:52:46 ik1-307-13626 systemd: Started LSB: Bring up/down networking.
+May 26 11:52:46 ik1-307-13626 systemd: Reached target Network.
+May 26 11:52:46 ik1-307-13626 systemd: Starting Network.
+May 26 11:52:46 ik1-307-13626 systemd: Starting Fail2Ban Service...
+May 26 11:52:46 ik1-307-13626 systemd: Starting OpenSSH server daemon...
+May 26 11:52:46 ik1-307-13626 systemd: Starting Postfix Mail Transport Agent...
+May 26 11:52:46 ik1-307-13626 systemd: Starting System Logging Service...
+May 26 11:52:46 ik1-307-13626 systemd: Starting PostgreSQL 9.4 database server...
+May 26 11:52:46 ik1-307-13626 systemd: Starting Dynamic System Tuning Daemon...
+May 26 11:52:46 ik1-307-13626 systemd: Starting The Apache HTTP Server...
+May 26 11:52:46 ik1-307-13626 systemd: Reached target Network is Online.
+May 26 11:52:46 ik1-307-13626 systemd: Starting Network is Online.
+May 26 11:52:46 ik1-307-13626 systemd: Starting LSB: Supports the direct execution of binary formats....
+May 26 11:52:46 ik1-307-13626 systemd: Started System Logging Service.
+May 26 11:52:46 ik1-307-13626 systemd: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 833 (jexec)
+May 26 11:52:46 ik1-307-13626 systemd: Mounting Arbitrary Executable File Formats File System...
+May 26 11:52:46 ik1-307-13626 systemd: Started OpenSSH server daemon.
+May 26 11:52:46 ik1-307-13626 systemd: Mounted Arbitrary Executable File Formats File System.
+May 26 11:52:47 ik1-307-13626 jexec: Starting jexec services
+May 26 11:52:47 ik1-307-13626 systemd: Started LSB: Supports the direct execution of binary formats..
+May 26 11:52:47 ik1-307-13626 systemd: Starting SYSV: GeoServer...
+May 26 11:52:47 ik1-307-13626 ecommap: Starting GeoServer - ecom map
+May 26 11:52:47 ik1-307-13626 systemd: Started SYSV: GeoServer.
+May 26 11:52:47 ik1-307-13626 ecommap: GEOSERVER DATA DIR is /home/map/geoserver/data_dir
+May 26 11:52:47 ik1-307-13626 pg_ctl: < 2017-05-26 11:52:47.264 JST >LOG:  ログ出力をログ収集プロセスにリダイレクトしています
+May 26 11:52:47 ik1-307-13626 pg_ctl: < 2017-05-26 11:52:47.264 JST >ヒント:  ここからのログ出力はディレクトリ"pg_log"に現れます。
+May 26 11:52:47 ik1-307-13626 kernel: postgres (867): /proc/867/oom_adj is deprecated, please use /proc/867/oom_score_adj instead.
+May 26 11:52:47 ik1-307-13626 systemd: Started The Apache HTTP Server.
+May 26 11:52:47 ik1-307-13626 systemd: Started Dynamic System Tuning Daemon.
+May 26 11:52:47 ik1-307-13626 fail2ban-client: 2017-05-26 11:52:47,780 fail2ban.server         [891]: INFO    Starting Fail2ban v0.9.6
+May 26 11:52:47 ik1-307-13626 fail2ban-client: 2017-05-26 11:52:47,784 fail2ban.server         [891]: INFO    Starting in daemon mode
+May 26 11:52:47 ik1-307-13626 ecommap: 1 [main] INFO org.mortbay.log - Logging to org.slf4j.impl.SimpleLogger@71bb0662 via org.mortbay.log.Slf4jLog
+May 26 11:52:48 ik1-307-13626 systemd: Started PostgreSQL 9.4 database server.
+May 26 11:52:48 ik1-307-13626 systemd: Started Fail2Ban Service.
+May 26 11:52:48 ik1-307-13626 kernel: Netfilter messages via NETLINK v0.30.
+May 26 11:52:48 ik1-307-13626 kernel: ip_set: protocol 6
+May 26 11:52:48 ik1-307-13626 ecommap: 776 [main] WARN org.mortbay.log - Deprecated configuration used for /home/map/geoserver/webapps
+May 26 11:52:48 ik1-307-13626 ecommap: 845 [main] WARN org.mortbay.log - Deprecated configuration used for ../webapps
+May 26 11:52:48 ik1-307-13626 ecommap: 845 [main] INFO org.mortbay.log - jetty-6.1.26
+May 26 11:52:48 ik1-307-13626 systemd: Started Postfix Mail Transport Agent.
+May 26 11:52:48 ik1-307-13626 systemd: Reached target Multi-User System.
+May 26 11:52:48 ik1-307-13626 systemd: Starting Multi-User System.
+May 26 11:52:48 ik1-307-13626 systemd: Starting Update UTMP about System Runlevel Changes...
+May 26 11:52:48 ik1-307-13626 systemd: Started Update UTMP about System Runlevel Changes.
+May 26 11:52:48 ik1-307-13626 systemd: Startup finished in 1.182s (kernel) + 1.626s (initrd) + 9.825s (userspace) = 12.634s.
+May 26 11:52:51 ik1-307-13626 ecommap: 3574 [main] INFO /geoserver - Initializing Spring root WebApplicationContext
+May 26 11:52:54 ik1-307-13626 ecommap: 26 5 11:52:54 WARN [config.CustomEditorConfigurer] - Passing PropertyEditor instances into CustomEditorConfigurer is deprecated: use PropertyEditorRegistrars or PropertyEditor class names instead. Offending key [org.geotools.util.Version; offending editor instance: org.geoserver.platform.util.VersionPropertyEditor@726687f6
+May 26 11:52:55 ik1-307-13626 ecommap: 5 26, 2017 11:52:55 午前 org.geoserver.platform.GeoServerExtensions checkContext
+May 26 11:52:55 ik1-307-13626 ecommap: 警告: Extension lookup occured, but ApplicationContext is unset.
+May 26 11:52:59 ik1-307-13626 ecommap: 26 5 11:52:59 WARN [referencing.factory] - Axis elements found in a wkt definition, the force longitude first axis order hint might not be respected:
+May 26 11:52:59 ik1-307-13626 ecommap: PROJCS["WGS84 / Simple Mercator", GEOGCS["WGS 84", DATUM["WGS_1984", SPHEROID["WGS_1984", 6378137.0, 298.257223563]], PRIMEM["Greenwich", 0.0], UNIT["degree", 0.017453292519943295]], PROJECTION["Mercator_1SP_Google"], PARAMETER["latitude_of_origin", 0.0], PARAMETER["central_meridian", 0.0], PARAMETER["scale_factor", 1.0], PARAMETER["false_easting", 0.0], PARAMETER["false_northing", 0.0], UNIT["m", 1.0], AXIS["x", EAST], AXIS["y", NORTH], AUTHORITY["EPSG","54004"]]
+May 26 11:52:59 ik1-307-13626 ecommap: 26 5 11:52:59 WARN [org.geoserver] - Ignoring feature type directory /home/map/geoserver/data_dir/workspaces/map/map/datastore.xml_bak
+May 26 11:53:14 ik1-307-13626 ecommap: 26 5 11:53:14 WARN [geoserver.security] - /home/map/geoserver/data_dir/security/masterpw.info is a security risk. Please read this file and remove it afterward
+May 26 11:53:14 ik1-307-13626 ecommap: 26 5 11:53:14 WARN [geoserver.security] - /home/map/geoserver/data_dir/security/users.properties.old could be removed manually
+May 26 11:53:15 ik1-307-13626 ecommap: 27781 [main] INFO org.mortbay.log - org.mortbay.jetty.plus.webapp.Configuration does not support annotations on source. Use org.mortbay.jetty.annotations.Configuration instead
+May 26 11:53:15 ik1-307-13626 ecommap: 27783 [main] INFO org.mortbay.log - No Transaction manager found - if your webapp requires one, please configure one.
+May 26 11:53:16 ik1-307-13626 ecommap: 28852 [main] INFO /map - Aliases are enabled
+May 26 11:53:16 ik1-307-13626 ecommap: 26 5 11:53:16 INFO [servlet.AuthProxyServlet] - ProxyInfo loaded : 0
+May 26 11:53:17 ik1-307-13626 ecommap: 29206 [main] INFO org.mortbay.log - Started SelectChannelConnector@0.0.0.0:8080
+May 26 11:55:05 ik1-307-13626 ecommap: 26 5 11:55:05 INFO [jsp.login_jsp] - 80r7rtuq27vy1mzlwgg61p8um:1:Login#011admin
+May 26 11:55:05 ik1-307-13626 ecommap: 26 5 11:55:05 INFO [jsp.login_jsp] - 80r7rtuq27vy1mzlwgg61p8um::Login#011admin
+May 26 11:55:08 ik1-307-13626 ecommap: 26 5 11:55:08 INFO [jsp.login_jsp] - 80r7rtuq27vy1mzlwgg61p8um::Logout#011admin
+May 26 11:55:23 ik1-307-13626 systemd: Created slice user-0.slice.
+May 26 11:55:23 ik1-307-13626 systemd: Starting user-0.slice.
+May 26 11:55:23 ik1-307-13626 systemd: Started Session 1 of user root.
+May 26 11:55:23 ik1-307-13626 systemd-logind: New session 1 of user root.
+May 26 11:55:23 ik1-307-13626 systemd: Starting Session 1 of user root.
+May 26 11:55:23 ik1-307-13626 dbus[515]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+May 26 11:55:23 ik1-307-13626 dbus-daemon: dbus[515]: [system] Activating service name='org.freedesktop.problems' (using servicehelper)
+May 26 11:55:23 ik1-307-13626 dbus[515]: [system] Successfully activated service 'org.freedesktop.problems'
+May 26 11:55:23 ik1-307-13626 dbus-daemon: dbus[515]: [system] Successfully activated service 'org.freedesktop.problems'
